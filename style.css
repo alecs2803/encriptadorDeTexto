@@ -200,7 +200,7 @@ input:focus ~ label {
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 28.8px;
+    line-height: 1.8rem;
     text-align: center;
     color: var(--color-dos);
     margin: auto;
