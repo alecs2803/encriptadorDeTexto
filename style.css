@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+    --color-uno: #54dcda;
+    --color-dos: #fff;
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url(./img/pexels.jpg);
+    background-size: cover;
+    color: antiquewhite;
+    
+    box-sizing: border-box;
+    
+}
+
+.header{
+    padding: 1% 10% 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;  
+
+}
+
+.header-textos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-titulo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.125rem;
+    color: var(--color-uno);
+    
+
+}
+
+.header-parrafo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    color: var(--color-uno);
+
+}
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+    margin: 0%;
+}
+
+.cuerpo{
+    width: auto;
+    height: auto;
+    padding: 2% 10% 0% 10%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+ /* rectagulo de contenido 1 */
+
+.rectangulo-captura{
+    background-color: rgb(22, 45, 78);
+    width: 400px;
+    height: 600px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem 1rem 2rem 1rem;
+    box-sizing: border-box;
+    
+}
+
+.estilo-imput{
+    position: relative;
+}
+
+.estilo-imput input{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    padding: 0 15px;
+    border: 2px solid  var(--color-uno);
+
+    background: transparent;
+    color: var(--color-dos);
+    outline: none;
+
+}
+
+.estilo-imput label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color:var(--color-dos);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1875rem;
+    pointer-events: none;
+    transition: .4s;
+}
+
+input:focus ~ label {
+    top: 0%;
+    left: 15%;
+    font-size: 1rem;
+    padding: 0 2px;
+    background-color:  var(--color-uno);
+
+}
+
+.rectangulo-botones{
+    background-color: transparent;
+    width: 300px;
+    height: 100px;
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem 1rem 1rem 1rem;
+    
+}
+
+.boton-encriptar{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #343A40;
+    border-radius: 10px;
+    color:  var(--color-uno);
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}    
+
+.boton-desencriptar{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #343A40;
+    border-radius: 10px;
+    color:  var(--color-uno);
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}   
+
+
+.titulo-letras-nm{
+    font-family: "Open Sans", sans-serif;
+    margin: 10%;
+    font-size: .75rem;
+    color: var(--color-dos);
+}
+
+.rectangulo-imagen-titulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ /* rectagulo de contenido 2 */
+
+.rectangulo-datos{
+    background-color: rgb(22, 45, 78);
+    width: 400px;
+    height: 600px;
+    border-radius: 32px 16px 32px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangulo-titulo-contenido{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-1{
+
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    color: var(--color-dos);
+    margin: auto;
+
+}
+
+
+.parrafo-1{
+    font-family: "Open Sans", sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    text-decoration:underline;
+    color: var(--color-dos);
+    margin: auto;
+
+
+
+}
+
+
+.muneco{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    
+
+
+
+}
+
+.Destaque-rojo{
+    color: red;
+
+}
+
+/*footer*/
+
+.rectangulo-foter{
+    background-color: #343A40;
+    height: 8rem;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-foter{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+.botones-liga{
+    background-color: transparent;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between; 
+    gap: 20%
+}
+
+
+.liga-1{
+    color:  var(--color-uno);
+    font-family: "Titillium Web", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid  var(--color-uno);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.liga-1:hover{
+    background-color: rgb(119, 119, 117);
+}
+
+.liga-2{
+    color:  var(--color-uno);
+    font-family: "Titillium Web", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid  var(--color-uno);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.liga-2:hover{
+    background-color: rgb(119, 119, 117);
+}
+
+@media (max-width: 1200px){
+
+    .body{
+        margin: 0%;
+        
+    }
+    
+    .header{
+        justify-content: center;
+    }
+
+    .cuerpo{
+        flex-direction: column;
+        gap: 2rem;
+       
+        
+    }
+
+    .rectangulo-foter{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 2%;
+        
+
+    }
+}
+
+
+
+
+
+
+
