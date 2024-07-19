@@ -25,32 +25,46 @@
             
 
                 <div class="estilo-imput">
-                    <input type="text" required>
+
+                    <input type="text" id="inputText" style="text-transform:lowercase;" required>
+
+
                     <label> Ingresa el Texto</label>
                 </div>
                 
                 <div class="rectangulo-botones">
-                    <button class="boton-encriptar">encriptar</button>
-                    <button class="boton-desencriptar">desencriptar</button>
+
+                    <button id="encryptButton" class="boton-encriptar">encriptar</button>
+
+                    <button id="decryptButton" class="boton-desencriptar">desencriptar</button>
+
+                    <button onclick="reiniciaCampo();" id="limpiarCampo" class="botonlimpiarCampo" disabled>Limpiar Campo</button>
+                
                 </div>
+
 
                 <div class="rectangulo-imagen-titulo">
                     <img src="./img/bi_exclamation-circle-fill.png" alt="simbolo">
                     <a class="titulo-letras-nm">Solo letras minúsculas y sin acentos</a>
                 </div>
-            
-                
-
-               
+                 
         </section>
 
-        <section class="rectangulo-datos">
-            <div class="rectangulo-titulo-contenido">
-                <h1 class="titulo-1">Ningún mensaje fue <strong class="Destaque-rojo">encontrado</strong></h1>
-                <p class="parrafo-1">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+    
+
+        <section  class="rectangulo-datos">
+
+            <div   class="rectangulo-titulo-contenido">
+
+                <textarea  class="titulo-1" id="outputText" placeholder="Ningun Mensaje Fue Encontrado" readonly></textarea> 
+
+                <img class="muneco", src="./img/Muñeco.png">
+
             </div>
-            
-            <img class="muneco", src="./img/Muñeco.png">
+
+            <button id="copyButton" class="boton-copiar">Copiar Texto</button>
+      
         </section>
 
         

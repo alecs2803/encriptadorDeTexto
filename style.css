@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 :root{
-    --color-uno: #54dcda;
+    --color-uno: #21ea1d;
     --color-dos: #fff;
 
 }
@@ -90,7 +90,10 @@ body{
 .estilo-imput input{
     width: 300px;
     height: 150px;
-    border-radius: 5px;
+    border-radius: 30px;
+    border: 5px;
+    border-style:solid ;
+    border-color: var(--color-uno);
     font-size: 1.125rem;
     padding: 0 15px;
     border: 2px solid  var(--color-uno);
@@ -124,12 +127,13 @@ input:focus ~ label {
 
 .rectangulo-botones{
     background-color: transparent;
-    width: 300px;
-    height: 100px;
-    margin: 5%;
+    width: auto;
+    height: auto;
+    
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    
+    gap: 5%;
     border-radius: 1rem 1rem 1rem 1rem;
     
 }
@@ -153,10 +157,21 @@ input:focus ~ label {
     background-color: #343A40;
     border-radius: 10px;
     color:  var(--color-uno);
-
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
 }   
+
+.botonlimpiarCampo{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #343A40;
+    border-radius: 10px;
+    color:  var(--color-uno);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+
+}
 
 
 .titulo-letras-nm{
@@ -182,62 +197,63 @@ input:focus ~ label {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    gap: 40px;
+  
 }
 
 .rectangulo-titulo-contenido{
-    height: 100px;
-    width: 300px;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    
+    margin-top: 50px;
+    
 }
 
 .titulo-1{
-
+    width: 300px;
+    height: 150px;
+    background-color:var(--color-dos);
     font-family: "Anton", sans-serif;
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.8rem;
-    text-align: center;
-    color: var(--color-dos);
-    margin: auto;
-
-}
-
-
-.parrafo-1{
-    font-family: "Open Sans", sans-serif;
-    font-size: .75rem;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    text-decoration:underline;
-    color: var(--color-dos);
-    margin: auto;
-
-
+    text-align:center;
+    color: #21ea1d;
+    border-radius: 30px;
+    border: 5px;
+    border-style:solid ;
+    border-color: var(--color-uno);
+    
 
 }
 
 
 .muneco{
-    width: 300px;
-    height: 250px;
-    display: flex;
-    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    margin-top: 10px;
     
-
-
-
+    
 }
 
-.Destaque-rojo{
-    color: rgb(225, 240, 20);
-
+.boton-copiar{
+    width: 200px;
+    height: 50px;
+    font-family:"Open Sans", sans-serif;
+    font-size: 1.5rem;
+    background-color: #343A40;
+    border-radius: 10px;
+    color: var(--color-uno);
+    margin-top: 20px;
+    box-sizing: border-box;
 }
+
 
 /*footer*/
 
