@@ -26,10 +26,16 @@
 
                 <div class="estilo-imput">
 
-                    <input type="text" id="inputText" style="text-transform:lowercase;" required>
+                    <input type="text" id="inputText" style="text-transform:lowercase;" onkeydown="return /[a-z, ]/i.test(event.key)" required>
 
 
                     <label> Ingresa el Texto</label>
+                </div>
+
+                
+                <div class="rectangulo-imagen-titulo">
+                    <img src="./img/bi_exclamation-circle-fill.png" alt="simbolo">
+                    <a class="titulo-letras-nm">Solo letras minúsculas y sin acentos</a>
                 </div>
                 
                 <div class="rectangulo-botones">
@@ -38,14 +44,9 @@
 
                     <button id="decryptButton" class="boton-desencriptar">desencriptar</button>
 
-                    <button onclick="reiniciaCampo();" id="limpiarCampo" class="botonlimpiarCampo" disabled>Limpiar Campo</button>
-                
-                </div>
-
-
-                <div class="rectangulo-imagen-titulo">
-                    <img src="./img/bi_exclamation-circle-fill.png" alt="simbolo">
-                    <a class="titulo-letras-nm">Solo letras minúsculas y sin acentos</a>
+                    
+                    <button onclick="reiniciarTodo();" id="limpiarCampo" class="botonlimpiarCampo" disabled>Limpiar Campo</button>
+                    
                 </div>
                  
         </section>

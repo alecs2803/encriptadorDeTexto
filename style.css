@@ -26,6 +26,7 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 1rem;  
+    
 
 }
 
@@ -76,10 +77,11 @@ body{
     height: 600px;
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around ;
     align-items: center;
     border-radius: 2rem 1rem 2rem 1rem;
     box-sizing: border-box;
+    box-shadow: -5px 5px 6px 2px black;
     
 }
 
@@ -176,9 +178,10 @@ input:focus ~ label {
 
 .titulo-letras-nm{
     font-family: "Open Sans", sans-serif;
-    margin: 10%;
-    font-size: .75rem;
+    margin: 3%;
+    font-size: 1rem;
     color: var(--color-dos);
+    text-align: center;
 }
 
 .rectangulo-imagen-titulo{
@@ -199,6 +202,8 @@ input:focus ~ label {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    box-shadow: 5px 5px 6px 2px black;
+
   
 }
 
@@ -210,22 +215,22 @@ input:focus ~ label {
     justify-content: center;
     
     margin-top: 50px;
+
     
 }
 
 .titulo-1{
     width: 300px;
     height: 150px;
-    background-color:var(--color-dos);
-    font-family: "Anton", sans-serif;
-    font-style: normal;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.8rem;
     text-align:center;
-    color: #21ea1d;
+    color: var(--color-dos);
     border-radius: 30px;
-    border: 5px;
+    border: 2px;
     border-style:solid ;
     border-color: var(--color-uno);
     
@@ -268,6 +273,7 @@ input:focus ~ label {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 0px 0px 15px 0px black;
 }
 
 .titulo-foter{
@@ -327,6 +333,8 @@ input:focus ~ label {
 .liga-2:hover{
     background-color: rgb(119, 119, 117);
 }
+
+/*esto controla la dimencion de la pagina*/
 
 @media (max-width: 1200px){
 
