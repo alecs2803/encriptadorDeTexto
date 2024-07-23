@@ -1,11 +1,11 @@
-document.getElementById('encryptButton').addEventListener('click', function() {
-    const inputText = document.getElementById('inputText').value;
+document.getElementById('botonEncriptar').addEventListener('click', function() {
+    const campoTexto = document.getElementById('campoTexto').value;
     
     
-    const encryptedText = encrypt(inputText);
+    const encryptedText = encrypt(campoTexto);
     
     
-    document.getElementById('outputText').value = encryptedText;
+    document.getElementById('salidaTexto').value = encryptedText;
     limpiarCaja1();
     
 });
@@ -14,21 +14,21 @@ document.getElementById('encryptButton').addEventListener('click', function() {
 
 
 
-document.getElementById('decryptButton').addEventListener('click', function() {
-    const inputText = document.getElementById('inputText').value;
-    const decryptedText = decrypt(inputText);
-    document.getElementById('outputText').value = decryptedText;
+document.getElementById('botonDesencriptar').addEventListener('click', function() {
+    const campoTexto = document.getElementById('campoTexto').value;
+    const decryptedText = decrypt(campoTexto);
+    document.getElementById('salidaTexto').value = decryptedText;
     limpiarCaja1();
     
     
    
 });
 
-document.getElementById('copyButton').addEventListener('click', function() {
-    const outputText = document.getElementById('outputText').value;
+document.getElementById('botonCopiar').addEventListener('click', function() {
+    const salidaTexto = document.getElementById('salidaTexto').value;
 
-    if (outputText) {
-        navigator.clipboard.writeText(outputText).then(function() {
+    if (salidaTexto) {
+        navigator.clipboard.writeText(salidaTexto).then(function() {
             alert('Texto copiado al portapapeles');
 
             document.getElementById('limpiarCampo').removeAttribute('disabled');
@@ -65,13 +65,13 @@ function decrypt(text) {
 
 
 function limpiarCaja1(){
-    let valorCaja = document.getElementById('inputText');
+    let valorCaja = document.getElementById('campoTexto');
     valorCaja.value='';
 
 }    
 
 function limpiarCaja2(){
-    let valorCaja = document.getElementById('outputText');
+    let valorCaja = document.getElementById('salidaTexto');
     valorCaja.value='';
 
 }  

@@ -26,7 +26,7 @@
 
                 <div class="estilo-imput">
 
-                    <input type="text" id="inputText" style="text-transform:lowercase;" onkeydown="return /[a-z, ]/i.test(event.key)" required>
+                    <input type="text" id="campoTexto" style="text-transform:lowercase;" onkeydown="return /[a-z, ]/i.test(event.key)" required>
 
 
                     <label> Ingresa el Texto</label>
@@ -40,9 +40,9 @@
                 
                 <div class="rectangulo-botones">
 
-                    <button id="encryptButton" class="boton-encriptar">encriptar</button>
+                    <button id="botonEncriptar" class="boton-encriptar">encriptar</button>
 
-                    <button id="decryptButton" class="boton-desencriptar">desencriptar</button>
+                    <button id="botonDesencriptar" class="boton-desencriptar">desencriptar</button>
 
                     
                     <button onclick="reiniciarTodo();" id="limpiarCampo" class="botonlimpiarCampo" disabled>Limpiar Campo</button>
@@ -58,13 +58,13 @@
 
             <div   class="rectangulo-titulo-contenido">
 
-                <textarea  class="titulo-1" id="outputText" placeholder="Ningun Mensaje Fue Encontrado" readonly></textarea> 
+                <textarea  class="titulo-1" id="salidaTexto" placeholder="Ningun Mensaje Escrito" readonly></textarea> 
 
                 <img class="muneco", src="./img/Muñeco.png">
 
             </div>
 
-            <button id="copyButton" class="boton-copiar">Copiar Texto</button>
+            <button id="botonCopiar" class="boton-copiar">Copiar Texto</button>
       
         </section>
 
